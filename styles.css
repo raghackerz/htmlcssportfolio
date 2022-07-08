@@ -1,0 +1,119 @@
+:root {
+  box-sizing: border-box;
+  font-size: 13px;
+  font-weight: 400;
+  scroll-behavior: smooth;
+
+  /* variables */
+  --dark-bg: hsl(0 0% 23%);
+  --red-bg: hsl(0 60% 55%);
+  --light-bg: hsl(0 60% 55%);
+}
+body {
+  margin: 0;
+}
+p {
+  font-size: 1.7rem;
+}
+#navbar {
+  background-color: var(--red-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 2.2rem;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 3.9rem;
+  font-weight: bold;
+  text-align: center;
+}
+#welcome-section {
+  background-color: var(--dark-bg);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#name {
+  font-size: 4rem;
+}
+#welcome-desc {
+  font-size: 2rem;
+}
+#projects {
+  background: hsl(265, 100%, 86%);
+}
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+.project-tile {
+  width: 100%;
+  max-width: 1280px;
+  border-radius: 0.5rem;
+}
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 0.5rem;
+  border: solid black 1px;
+}
+.project-desc {
+  margin: 0px;
+  background: hsl(265, 100%, 10%);
+  color: white;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+}
+#contact {
+  background-color: var(--dark-bg);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#footer {
+}
+#profile-link {
+  text-decoration: none;
+  color: white;
+}
+#github {
+  font-size: 3rem;
+}
+
+@media (max-width: 980px) {
+  html {
+    font-size: 20px;
+  }
+  #grid {
+    grid-template-columns: 1fr;
+  }
+  img {
+    max-width: 100%;
+  }
+  .project_desc {
+    max-width: 100%;
+  }
+}
